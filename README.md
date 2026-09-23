@@ -5,7 +5,7 @@ binary and compiler level.
 
 Most of what I build asks one question in different forms: **what does a
 compiled artefact actually guarantee?** Not what the source intended, not what
-the build flags claimed — what survived into the binary that ships. That gap
+the build flags claimed - what survived into the binary that ships. That gap
 is where exploitation lives, and it is invisible unless something goes looking
 for it.
 
@@ -15,7 +15,7 @@ for it.
 
 **[hardening-check](https://github.com/IliasSoultana/hardening-check)** · Python
 Parses ELF headers and reports which exploit mitigations a binary was really
-compiled with — PIE, NX, stack canary, RELRO. JSON output and a `--fail-under`
+compiled with - PIE, NX, stack canary, RELRO. JSON output and a `--fail-under`
 gate, so a dropped build flag stops a pipeline instead of shipping silently.
 
 **[llvm-hardeningpass](https://github.com/IliasSoultana/llvm-hardeningpass)** · C++
@@ -50,11 +50,11 @@ k3s with `kubeconform` validation in CI.
 
 Embedded work from an internship at Fraunhofer IMS: ESP32-S3 firmware under
 FreeRTOS and its OTA update path, where updates were authenticated by a plain
-SHA-256 checksum — proof a file arrived intact, but not proof of who sent it.
+SHA-256 checksum - proof a file arrived intact, but not proof of who sent it.
 Anyone reaching the MQTT broker could publish firmware to the fleet. Closed
 with an HMAC-SHA256 signature the device verifies before download.
 
-Currently reading toward exploitation and agent security — the two directions
+Currently reading toward exploitation and agent security - the two directions
 where "what does this actually guarantee" gets most interesting.
 
 📍 Hagen, Germany · 📧 smilsou1@unimail.tu-dortmund.de
