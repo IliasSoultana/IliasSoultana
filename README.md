@@ -59,8 +59,8 @@ Its update path authenticated images with a plain SHA-256 checksum, which proves
 a file arrived intact but says nothing about who sent it; anyone reaching the
 broker could publish their own firmware to the fleet. I closed it with an HMAC
 signature the device checks before it downloads anything. Nobody asked me to
-look, and that habit of reading a machine more honestly than it presents itself,
-whether a stripped binary, a firmware update, or an AI agent that can be talked
-past its limits, is the thread through all of this.
+look. That habit, reading a machine more honestly than it presents itself,
+whether a stripped binary or a firmware update path that trusts the wrong thing,
+is the thread through all of this.
 
 📍 Hagen, Germany · smilsou1@unimail.tu-dortmund.de
